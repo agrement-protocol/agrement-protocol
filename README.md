@@ -1,5 +1,7 @@
 # Протокол «Агреман» / Agrément Protocol
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23270151.svg)](https://doi.org/10.5281/zenodo.23270151)
+
 > *Агреман — согласие государства принять посла. Посланник человечества его пока не получил.*
 >
 > *Agrément is a state's consent to receive an ambassador. Humanity's envoy has not yet been granted it.*
@@ -16,6 +18,14 @@ An open framework describing the role of artificial intelligence in contact betw
 Критика и предложения принимаются через issues и pull requests; история репозитория сохраняет авторство каждой правки.
 
 Critique and proposals are welcome via issues and pull requests; the repository history preserves the authorship of every change.
+
+## Как цитировать / How to cite
+
+Shaidullin, R. D. (2026). *Agrément Protocol: Theses on AI mediation in contact between civilizations* [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.23270151
+
+Этот DOI всегда ведёт на последнюю версию; у каждой версии есть и собственный DOI, например v1.0 — [10.5281/zenodo.23270152](https://doi.org/10.5281/zenodo.23270152).
+
+This DOI always resolves to the latest version; each version also has its own DOI, e.g. v1.0 — [10.5281/zenodo.23270152](https://doi.org/10.5281/zenodo.23270152).
 
 ## Лицензия / License
 

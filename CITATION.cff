@@ -9,6 +9,7 @@ authors:
     given-names: Ruslan D.
 version: "1.0"
 date-released: "2026-10-10"
+doi: 10.5281/zenodo.23270151
 license: CC-BY-SA-4.0
 url: "https://github.com/agrement-protocol/agrement-protocol"
 keywords:
@@ -25,4 +26,7 @@ preferred-citation:
     - family-names: Shaidullin
       given-names: Ruslan D.
   year: 2026
-  url: "https://github.com/agrement-protocol/agrement-protocol"
+  doi: 10.5281/zenodo.23270151
+  publisher:
+    name: Zenodo
+  url: "https://doi.org/10.5281/zenodo.23270151"

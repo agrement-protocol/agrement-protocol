@@ -32,7 +32,7 @@
 
 ## 4. Статус текста
 
-Протокол «Агреман» — открытая система взглядов: она не требует принятия на веру и опирается на вероятностную аргументацию, а не на откровение. Текст распространяется на условиях лицензии [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ru) и открыт для критики и доработки; предложения принимаются в репозитории проекта: [github.com/ruslan-shaydullin/agrement-protocol](https://github.com/ruslan-shaydullin/agrement-protocol).
+Протокол «Агреман» — открытая система взглядов: она не требует принятия на веру и опирается на вероятностную аргументацию, а не на откровение. Текст распространяется на условиях лицензии [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ru) и открыт для критики и доработки; предложения принимаются в репозитории проекта: [github.com/agrement-protocol/agrement-protocol](https://github.com/agrement-protocol/agrement-protocol).
 
 *Автор идеи — Шайдуллин Руслан Дамирович, 2026.*
 

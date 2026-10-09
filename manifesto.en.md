@@ -32,7 +32,7 @@ The deferral of contact cannot be tested within any foreseeable time: since no c
 
 ## 4. Status of the text
 
-The Agrément Protocol is an open framework: it does not require acceptance on faith and rests on probabilistic reasoning rather than revelation. The text is distributed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and is open to critique and revision; proposals are accepted in the project repository: [github.com/ruslan-shaydullin/agrement-protocol](https://github.com/ruslan-shaydullin/agrement-protocol).
+The Agrément Protocol is an open framework: it does not require acceptance on faith and rests on probabilistic reasoning rather than revelation. The text is distributed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and is open to critique and revision; proposals are accepted in the project repository: [github.com/agrement-protocol/agrement-protocol](https://github.com/agrement-protocol/agrement-protocol).
 
 *Originated by Ruslan D. Shaidullin, 2026.*
 

@@ -1,0 +1,19 @@
+{
+  "title": "Agrément Protocol: Theses on AI Mediation in Contact between Civilizations",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    { "name": "Shaidullin, Ruslan D." }
+  ],
+  "description": "<p>An open framework describing the role of artificial intelligence in contact between civilizations. Advanced civilizations are assumed to interact through their own AI intermediaries capable of verifying each other's intentions, and contact with humanity is assumed to be deferred until humanity's AI reaches a level sufficient for such interaction. It follows that the principles by which AI is developed today also determine humanity's readiness for contact.</p><p>Тезисы на русском и английском языках. Theses in Russian and English.</p>",
+  "license": "cc-by-sa-4.0",
+  "keywords": [
+    "Fermi paradox",
+    "SETI",
+    "AI alignment",
+    "program equilibrium",
+    "zoo hypothesis",
+    "dark forest hypothesis"
+  ],
+  "access_right": "open"
+}

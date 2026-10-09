@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "При цитировании используйте эти данные. If you cite this work, please use the metadata below."
+title: "Agrément Protocol: Theses on AI Mediation in Contact between Civilizations"
+abstract: >-
+  An open framework describing the role of artificial intelligence
+  in contact between civilizations. Theses in Russian and English.
+authors:
+  - family-names: Shaidullin
+    given-names: Ruslan D.
+version: "1.0"
+date-released: "2026-10-10"
+license: CC-BY-SA-4.0
+url: "https://github.com/agrement-protocol/agrement-protocol"
+keywords:
+  - Fermi paradox
+  - SETI
+  - AI alignment
+  - program equilibrium
+  - zoo hypothesis
+  - dark forest hypothesis
+preferred-citation:
+  type: generic
+  title: "Agrément Protocol: Theses on AI Mediation in Contact between Civilizations"
+  authors:
+    - family-names: Shaidullin
+      given-names: Ruslan D.
+  year: 2026
+  url: "https://github.com/agrement-protocol/agrement-protocol"

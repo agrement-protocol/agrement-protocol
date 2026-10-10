@@ -8,7 +8,7 @@ authors:
   - family-names: Shaidullin
     given-names: Ruslan D.
 version: "1.0"
-date-released: "2026-10-10"
+date-released: "2026-10-09"
 doi: 10.5281/zenodo.23270151
 license: CC-BY-SA-4.0
 url: "https://github.com/agrement-protocol/agrement-protocol"

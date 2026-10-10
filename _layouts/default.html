@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 {%- assign lang = page.lang | default: site.lang -%}
-{%- comment -%} Парные страницы *.en.md / *.ru.md получают переключатель языка. {%- endcomment -%}
-{%- if page.lang -%}
-  {%- assign en_url = page.url | replace: ".ru.", ".en." -%}
-  {%- assign ru_url = page.url | replace: ".en.", ".ru." -%}
+{%- comment -%}
+  Парные страницы получают переключатель языка: X.ru.md и X.md (или X.en.md).
+{%- endcomment -%}
+{%- if page.path contains ".md" -%}
+  {%- assign base = page.url | remove: ".ru.html" | remove: ".en.html" | remove: ".html" -%}
+  {%- assign ru_url = base | append: ".ru.html" -%}
+  {%- assign en_url = base | append: ".en.html" -%}
   {%- assign en_page = site.pages | where: "url", en_url | first -%}
+  {%- unless en_page -%}
+    {%- assign en_url = base | append: ".html" -%}
+    {%- assign en_page = site.pages | where: "url", en_url | first -%}
+  {%- endunless -%}
   {%- assign ru_page = site.pages | where: "url", ru_url | first -%}
 {%- endif -%}
 {%- assign rev = site.github.build_revision | default: "main" %}

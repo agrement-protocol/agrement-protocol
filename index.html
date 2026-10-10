@@ -3,14 +3,14 @@ title: "Agrément Protocol: Theses on AI Mediation in Contact between Civilizati
 title_ru: "Протокол «Агреман»: тезисы о посредничестве искусственного интеллекта в контакте между цивилизациями"
 ---
 {%- comment -%}
-  Аннотации берутся из manifesto.en.md и manifesto.ru.md, чтобы не дублировать текст.
+  Аннотации берутся из текстов тезисов (site.theses_en, site.theses_ru), чтобы не дублировать текст.
   Абзац аннотации начинается с «**Abstract.**» / «**Аннотация.**» и заканчивается пустой строкой.
 {%- endcomment -%}
 {%- capture blank_line %}
 
 {% endcapture -%}
-{%- assign en = site.pages | where: "path", "manifesto.en.md" | first -%}
-{%- assign ru = site.pages | where: "path", "manifesto.ru.md" | first -%}
+{%- assign en = site.pages | where: "path", site.theses_en | first -%}
+{%- assign ru = site.pages | where: "path", site.theses_ru | first -%}
 {%- assign abstract_en = en.content | split: "**Abstract.**" | last | split: blank_line | first | strip -%}
 {%- assign abstract_ru = ru.content | split: "**Аннотация.**" | last | split: blank_line | first | strip -%}
 <h1>{{ page.title }}</h1>

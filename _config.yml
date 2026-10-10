@@ -1,9 +1,9 @@
 # Сайт проекта: GitHub Pages, встроенный Jekyll, ветка main.
-# Страницы тезисов собираются из manifesto.*.md без служебных шапок:
-# страницы, заголовки и ссылки между .md дают плагины, включённые на
-# GitHub Pages по умолчанию (jekyll-optional-front-matter,
-# jekyll-titles-from-headings, jekyll-relative-links); язык страницы
-# задаётся по имени файла (*.en.md, *.ru.md).
+# Страницы собираются из .md-файлов без служебных шапок: страницы,
+# заголовки и ссылки между .md дают плагины, включённые на GitHub Pages
+# по умолчанию (jekyll-optional-front-matter, jekyll-titles-from-headings,
+# jekyll-relative-links). Язык задаётся по имени файла: *.ru.md — русский,
+# остальные — английский.
 
 title: Agrément Protocol
 title_ru: Протокол «Агреман»
@@ -23,6 +23,10 @@ release_date: 2026-10-09
 doi: 10.5281/zenodo.23270151
 version_doi: 10.5281/zenodo.23270152
 repository: https://github.com/agrement-protocol/agrement-protocol
+
+# Тексты тезисов: из них главная берёт аннотации и ссылки на полный текст.
+theses_en: manifesto.en.md
+theses_ru: manifesto.ru.md
 
 optional_front_matter:
   remove_originals: true

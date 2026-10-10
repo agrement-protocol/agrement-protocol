@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{%- assign lang = page.lang | default: site.lang -%}
+{%- comment -%} Парные страницы *.en.md / *.ru.md получают переключатель языка. {%- endcomment -%}
+{%- if page.lang -%}
+  {%- assign en_url = page.url | replace: ".ru.", ".en." -%}
+  {%- assign ru_url = page.url | replace: ".en.", ".ru." -%}
+  {%- assign en_page = site.pages | where: "url", en_url | first -%}
+  {%- assign ru_page = site.pages | where: "url", ru_url | first -%}
+{%- endif -%}
+{%- assign rev = site.github.build_revision | default: "main" %}
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | default: site.title }}</title>
+<meta name="description" content="{% if lang == 'ru' %}{{ site.description_ru }}{% else %}{{ site.description }}{% endif %}">
+{%- if en_page and ru_page %}
+<link rel="alternate" hreflang="en" href="{{ en_url | absolute_url }}">
+<link rel="alternate" hreflang="ru" href="{{ ru_url | absolute_url }}">
+{%- endif %}
+<link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+<header>
+<a class="home" href="{{ '/' | relative_url }}"><svg class="mark" viewBox="5 29 106 74" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="3.6"><path d="M16 92 52 40"/><path d="M63.82 47.88 88.35 64.23" stroke-dasharray="4.213 4.213"/><circle cx="100" cy="72" r="9"/></g><g fill="currentColor"><circle cx="16" cy="92" r="9"/><circle cx="52" cy="40" r="11"/></g></svg>
+{%- if lang == "ru" %}{{ site.title_ru }}{% else %}{{ site.title }}{% endif %}</a>
+{%- if en_page and ru_page %}
+<nav>
+{%- if lang == "en" %} EN{% else %} <a href="{{ en_url | relative_url }}" hreflang="en" lang="en" title="English">EN</a>{% endif %} /
+{% if lang == "ru" %}RU{% else %}<a href="{{ ru_url | relative_url }}" hreflang="ru" lang="ru" title="Русский">RU</a>{% endif %}
+</nav>
+{%- endif %}
+</header>
+<main>
+{{ content }}
+</main>
+<footer>
+<a href="https://creativecommons.org/licenses/by-sa/4.0/{% if lang == 'ru' %}deed.ru{% endif %}">CC BY-SA 4.0</a>
+<a href="https://doi.org/{{ site.doi }}">doi:{{ site.doi }}</a>
+{%- if page.path contains ".md" %}
+<a href="{{ site.repository }}/blob/{{ rev }}/{{ page.path }}">{{ page.path }} @ {{ rev | slice: 0, 7 }}</a>
+{%- else %}
+<a href="{{ site.repository }}/tree/{{ rev }}">source @ {{ rev | slice: 0, 7 }}</a>
+{%- endif %}
+</footer>
+</body>
+</html>

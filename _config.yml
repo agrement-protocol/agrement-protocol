@@ -1,0 +1,51 @@
+# Сайт проекта: GitHub Pages, встроенный Jekyll, ветка main.
+# Страницы тезисов собираются из manifesto.*.md без служебных шапок:
+# страницы, заголовки и ссылки между .md дают плагины, включённые на
+# GitHub Pages по умолчанию (jekyll-optional-front-matter,
+# jekyll-titles-from-headings, jekyll-relative-links); язык страницы
+# задаётся по имени файла (*.en.md, *.ru.md).
+
+title: Agrément Protocol
+title_ru: Протокол «Агреман»
+description: >-
+  An open framework describing the role of artificial intelligence
+  in contact between civilizations. Preprint, theses in English and Russian.
+description_ru: >-
+  Открытая система взглядов на роль искусственного интеллекта
+  в контакте между цивилизациями. Препринт, тезисы на русском и английском.
+lang: en
+theme: null
+
+# Опубликованная версия. Менять вместе с CITATION.cff, когда выходит релиз;
+# version_doi появляется на Zenodo после релиза.
+version: "1.0"
+release_date: 2026-10-09
+doi: 10.5281/zenodo.23270151
+version_doi: 10.5281/zenodo.23270152
+repository: https://github.com/agrement-protocol/agrement-protocol
+
+optional_front_matter:
+  remove_originals: true
+
+exclude:
+  - CNAME
+  - README.md
+  - README.ru.md
+  - LICENSE
+  - CITATION.cff
+  - CLAUDE.md
+  - assets/logo
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: "*.en.md"
+    values:
+      lang: en
+  - scope:
+      path: "*.ru.md"
+    values:
+      lang: ru

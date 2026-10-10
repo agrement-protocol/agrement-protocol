@@ -1,0 +1,183 @@
+:root {
+  color-scheme: light;
+  --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --label: 9rem;
+  --gap: 1.5rem;
+  --measure: 70ch;
+}
+
+body {
+  max-width: calc(var(--label) + var(--gap) + var(--measure));
+  margin: 0 auto;
+  padding: 0 1rem;
+  background: #fff;
+  color: #000;
+  font: 0.9375rem/1.6 var(--mono);
+  overflow-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+header, h2, .meta dt, .label, footer {
+  font-size: 0.75rem;
+}
+
+header, h2, .meta dt, .label {
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding: 1.25rem 0 0.75rem;
+  border-bottom: 1px solid;
+}
+
+header .home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75em;
+  text-decoration: none;
+}
+
+.mark {
+  width: 2.3em;
+  height: 1.6em;
+}
+
+main {
+  padding: 2.5rem 0 3rem;
+}
+
+main > * {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+main > h2,
+main > h2 + * {
+  margin-top: 1.5rem;
+}
+
+main > div > :first-child {
+  margin-top: 0;
+}
+
+main > div > :last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.meta {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 0.35rem var(--gap);
+  align-items: baseline;
+  margin: 1.5rem 0 0.5rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.meta dt {
+  grid-column: 1;
+}
+
+.meta dd {
+  grid-column: 2;
+  margin: 0;
+}
+
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1rem;
+  border-left: 1px solid;
+}
+
+ul, ol {
+  padding-left: 2em;
+}
+
+.label {
+  margin-bottom: 0.25rem;
+}
+
+pre {
+  padding-left: 1rem;
+  border-left: 1px solid;
+  font: inherit;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  padding: 0.75rem 0 2.5rem;
+  border-top: 1px solid;
+}
+
+/* Подписи разделов выносятся на левое поле, текст остаётся одной колонкой. */
+@media (min-width: 52rem) {
+  main {
+    display: grid;
+    grid-template-columns: var(--label) minmax(0, 1fr);
+    column-gap: var(--gap);
+    align-items: baseline;
+  }
+
+  main > * {
+    grid-column: 2;
+  }
+
+  main > h2 {
+    grid-column: 1;
+  }
+
+  main > .meta {
+    grid-column: 1 / -1;
+    grid-template-columns: var(--label) minmax(0, 1fr);
+  }
+}
